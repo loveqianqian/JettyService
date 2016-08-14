@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service msgCode="0010">
+    <keyWords>
+        <list>
+            <key>pat_code</key>
+        </list>
+    </keyWords>
+    <request>
+        <property name="pat_code" dateType="string" nullable="false" majorProperty="true" maxLength="32" comments="病人id"/>
+    </request>
+    <response>
+        <property name="pat_code" dateType="string" nullable="false" majorProperty="true" maxLength="32"
+                  comments="病人id"/>
+        <property name="visit_list">
+            <property name="visit_id" dateType="int" nullable="false" majorProperty="false"/>
+            <property name="date" dateType="date" nullable="false" majorProperty="false"/>
+        </property>
+        <property name="in_hospital_list">
+            <property name="visit_id" dateType="int" nullable="false" majorProperty="false"/>
+            <property name="date" dateType="date" nullable="false" majorProperty="false"/>
+            <property name="ward_list">
+                <property name="ward" dateType="string"/>
+                <property name="bed_no" dateType="int"/>
+            </property>
+        </property>
+    </response>
+</service>

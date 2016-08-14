@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mode>
+    <Soap>
+        <name>com.heren.turtle.entry.service.impl.SoapService</name>
+        <ip>localhost</ip>
+        <port>8081</port>
+        <nameSuffix>soap</nameSuffix>
+        <method></method>
+        <methodType></methodType>
+        <status>true</status>
+        <needToFilter>true</needToFilter>
+    </Soap>
+    <Rest>
+        <name>com.heren.turtle.entry.service.impl.RestService</name>
+        <ip>localhost</ip>
+        <port>8082</port>
+        <nameSuffix>rest</nameSuffix>
+        <method></method>
+        <methodType></methodType>
+        <status>true</status>
+        <needToFilter>false</needToFilter>
+    </Rest>
+    <Netty>
+        <name>com.heren.turtle.entry.channel.MessageReceiveServer</name>
+        <ip></ip>
+        <port>8084</port>
+        <nameSuffix></nameSuffix>
+        <method>bind</method>
+        <methodType>int,boolean</methodType>
+        <status>true</status>
+        <needToFilter>true</needToFilter>
+    </Netty>
+</Mode>
